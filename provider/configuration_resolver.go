@@ -5,7 +5,7 @@ import (
 	"github.com/shellrean-playground/hotel-be-common-util/configuration"
 )
 
-func ResolveConfiguration() *config.Config {
+func GetConfiguration() *config.Config {
 	configPath, err := configuration.ParseFlags()
 	if err != nil {
 		panic(err)
